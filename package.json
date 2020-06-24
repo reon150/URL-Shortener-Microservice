@@ -1,0 +1,28 @@
+{
+  "name": "shorturl",
+  "version": "1.0.0",
+  "description": "shorturl API",
+  "main": "server.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "dev": "nodemon src/index.js"
+  },
+  "keywords": [
+    "node",
+    "express",
+    "shorturl",
+    "api",
+    "microservice"
+  ],
+  "author": "Ronald Ogando Negron",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.17.1",
+    "mongoose": "^5.9.16",
+    "dotenv": "^8.2.0",
+    "cors": "^2.8.5"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.4"
+  }
+}
