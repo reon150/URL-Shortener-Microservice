@@ -18,6 +18,8 @@ urlCtrl.getURLFull = async (req, res) => {
 urlCtrl.createURLShort = async (req, res) => {
     try {
         const originalURL = req.body.url;
+        console.log(originalURL)
+        console.log(isValidUrl(originalURL))
         if (isValidUrl(originalURL)) {
             const shortURL = generateShortURL();
             const newUrl= new URLShorterDB({ 
